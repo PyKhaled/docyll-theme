@@ -1,0 +1,46 @@
+.main-header
+    padding: 15px 5vw
+    // margin-bottom: 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    box-shadow: 0 1px 8px rgba(0,0,0, .4)
+    background-color: $primary-color
+
+.logo
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $primary-color-text
+    cursor: pointer
+    & img 
+        margin-right: 10px
+
+.main-nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media screen and (max-width: 455px)
+        display: none // work on it later
+    &__site-nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__item
+            padding: 0 10px
+            &__link
+                transition: all .5 ease-in-out
+                color: $divider-color
+                &:hover,
+                &.current
+                    color: $primary-color-text
+    
+    &__social-links
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__item
+            padding-left: 10px
+            color: white
+            & .icon
+                width: 16px
