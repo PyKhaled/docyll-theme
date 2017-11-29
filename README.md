@@ -2,8 +2,7 @@
 
 Doccyll is a [Jekyll](https://jekyllrb.com) theme helps you create beautiful documentation website quickly and focus on writing content not styling and visuals, that it cares about.
 
-TODO: Replace this iamge with real one 
-![](https://camo.githubusercontent.com/68e0d0d6bd77809f0f384d67bcf4d4a9e49f7db4/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f39383638312f313832353236362f62653033663031342d373162302d313165332d393533392d3837366536313533306532342e706e67)
+<!-- TODO: Replace this iamge with real one  -->
 
 
 ## Installation
@@ -30,7 +29,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+<!-- TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets. -->
 
 ## Contributing
 
