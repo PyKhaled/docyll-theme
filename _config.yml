@@ -10,27 +10,25 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Social media profiles
-twitter: "https://twitter.com/project"
-github: "https://github.com/user/project"
-slack: "https://project.slack.com"
-stackoverflow: "https://stackoverflow.com/questions/tagged/project"
+# twitter: "https://twitter.com/project"
+# github: "https://github.com/user/project"
+# slack: "https://project.slack.com"
+# # stackoverflow: "https://stackoverflow.com/questions/tagged/project"
 
-# # Build settings
-# markdown: kramdown
-# # theme: Docyll
-# plugins:
-#   # - jekyll-feed
-# sass:
-#     sass_dir: _sass
-#     style: compressed
+# Build settings
+markdown: kramdown
+# theme: Docyll
 
-  
-# # Exclude from processing.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
