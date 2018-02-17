@@ -1,41 +1,64 @@
 .main-header
-    padding: 15px 5vw
-    // margin-bottom: 10px
+    padding: 5px 5vw
     display: flex
     justify-content: space-between
     align-items: center
-    box-shadow: 0 1px 8px rgba(0,0,0, .4)
+    flex-wrap: wrap
+    box-shadow: 0 1px 7px black
     background-color: $primary-color
 
 .logo
     display: flex
     justify-content: space-between
     align-items: center
+    transition: all .4s ease-in-out
     color: $primary-color-text
-    cursor: pointer
+    font-size: .5rem
     & img 
         margin-right: 10px
 
+.nav-button
+    background: transparent
+    border: 0
+    padding: 10px 20px
+    color: $divider-color
+    &:hover
+        color: $primary-color-text
+    @media screen and (min-width: $bp-medium)
+        display: none
+
 .main-nav
+    transition: all 1s ease-in-out
     display: flex
     justify-content: space-between
     align-items: center
-    @media screen and (max-width: 455px)
-        display: none // work on it later
+    @media screen and (max-width: $bp-medium)
+        display: none
+        flex-direction: column
+        flex-wrap: wrap
+        flex-grow: 8
+    
     &__site-nav
         display: flex
+        list-style-type: none
+        padding: 0
         justify-content: space-between
         align-items: center
+        @media screen and (max-width: $bp-medium)
+            flex-direction: column
+        
         &__item
             padding: 0 10px
             &__link
-                transition: all .5 ease-in-out
-                color: $divider-color
+                transition: all .1s ease-in-out
+                color: $primary-color-text
                 &:hover,
                 &.current
-                    color: $primary-color-text
+                    color: $divider-color
     
     &__social-links
+        list-style-type: none
+        padding: 0
         display: flex
         justify-content: space-between
         align-items: center
