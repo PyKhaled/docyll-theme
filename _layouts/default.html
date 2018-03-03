@@ -7,6 +7,9 @@
         <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
         <link rel="stylesheet" href="{{ '/assets/css/theme.css' | relative_url }}">
         <link rel="stylesheet" href="{{ '/assets/css/docyll.css' | relative_url }}">
+        {% if site.google_analytics %}
+            {% include analytics.html %}
+        {% endif %}
     </head>
     <body>
         <!-- Header -->
