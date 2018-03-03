@@ -1,14 +1,11 @@
 <header class="main-header">
     
-    
-    <a href="/" class="logo">
+    <a href="{{ site.url }}" class="logo">
         <img src="{{site.baseurl}}assets/logo.svg" width="30" height="30" alt="{{site.title}} logo">
         <h1>{{ site.title }}</h1>
     </a>
 
-    <button class="nav-button">
-        <i class="fa fa-bars"></i>
-        Menu</button>
+    <button class="nav-button"><i class="fa fa-bars"></i> Menu</button>
     
     <nav class="main-nav">
     
@@ -18,7 +15,7 @@
                 <a class="main-nav__site-nav__item__link {% if page.url == '/'  %} current {% endif %}" href="{{ sites.baseurl}}/">Home</a>
             </li>
             
-            <li class="main-nav__site-nav__itemk">
+            <li class="main-nav__site-nav__item">
                 <a class="main-nav__site-nav__item__link {% if page.url == '/docs.html' %} current {% endif %}" href="{{ sites.baseurl}}/docs.html">Documentation</a>
             </li>
             
@@ -35,57 +32,18 @@
             </li>
 
         </ul>
-        <ul class="main-nav__social-links">
-          
-            {% if site.stackoverflow %}
-            <li class="main-nav__social-links__item">
-                <a href="{{site.stackoverflow}}" target="_blank">
-                    <svg class="icon" enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x34__stroke"><g id="Stack_Overflow"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/><g id="Stack_Overflow_1_"><path clip-rule="evenodd" d="M101.991,52.29L73.278,10.538l-8.994,6.08l28.714,41.751     L101.991,52.29z M91.228,59.85L47.332,34.177L41.8,43.471l43.898,25.674L91.228,59.85z M84.803,72.195L35.589,59.077     l-2.828,10.422l49.217,13.12L84.803,72.195z M81.455,86.279l-50.746-4.636l-0.999,10.749l50.747,4.632L81.455,86.279z      M114.667,49.789L105.949,0L95.223,1.845l8.717,49.789L114.667,49.789z M80.229,110.913l-50.964,0.024l-0.004-10.793     l50.962-0.026L80.229,110.913z" fill="#FF810F" fill-rule="evenodd"/><polygon clip-rule="evenodd" fill="#BEBCBC" fill-rule="evenodd" points="88.884,75.409 88.884,119.532 22.04,119.532      22.04,75.409 13.333,75.409 13.333,128 97.547,128 97.547,75.409    "/></g></g></g></svg>
-                </a>
-            </li>
-            {% endif %} 
-            
-            {% if site.github %}
-            <li class="main-nav__social-links__item">
-                <a href="{{site.github}}">
-                    <svg class="icon" enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="_x31__stroke">
-                            <g id="Github_1_">
-                                <rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128" />
-                                <path clip-rule="evenodd" d="M63.996,1.333C28.656,1.333,0,30.099,0,65.591    c0,28.384,18.336,52.467,43.772,60.965c3.2,0.59,4.368-1.394,4.368-3.096c0-1.526-0.056-5.566-0.088-10.927    c-17.804,3.883-21.56-8.614-21.56-8.614c-2.908-7.421-7.104-9.397-7.104-9.397c-5.812-3.988,0.44-3.907,0.44-3.907    c6.42,0.454,9.8,6.622,9.8,6.622c5.712,9.819,14.98,6.984,18.628,5.337c0.58-4.152,2.236-6.984,4.064-8.59    c-14.212-1.622-29.152-7.132-29.152-31.753c0-7.016,2.492-12.75,6.588-17.244c-0.66-1.626-2.856-8.156,0.624-17.003    c0,0,5.376-1.727,17.6,6.586c5.108-1.426,10.58-2.136,16.024-2.165c5.436,0.028,10.912,0.739,16.024,2.165    c12.216-8.313,17.58-6.586,17.58-6.586c3.492,8.847,1.296,15.377,0.636,17.003c4.104,4.494,6.58,10.228,6.58,17.244    c0,24.681-14.964,30.115-29.22,31.705c2.296,1.984,4.344,5.903,4.344,11.899c0,8.59-0.08,15.517-0.08,17.626    c0,1.719,1.152,3.719,4.4,3.088C109.68,118.034,128,93.967,128,65.591C128,30.099,99.344,1.333,63.996,1.333"
-                                    fill="#3E75C3" fill-rule="evenodd" id="Github" />
-                            </g>
-                        </g>
-                    </svg>
-                </a>
-            </li>
-            {% endif %} 
-            
-            {% if site.twitter %}
-            <li class="main-nav__social-links__item">
-                <a href="{{site.twitter}}">
-                        <svg class="icon" enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x37__stroke"><g id="Twitter"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/><path clip-rule="evenodd" d="M128,23.294    c-4.703,2.142-9.767,3.59-15.079,4.237c5.424-3.328,9.587-8.606,11.548-14.892c-5.079,3.082-10.691,5.324-16.687,6.526    c-4.778-5.231-11.608-8.498-19.166-8.498c-14.493,0-26.251,12.057-26.251,26.927c0,2.111,0.225,4.16,0.676,6.133    C41.217,42.601,21.871,31.892,8.91,15.582c-2.261,3.991-3.554,8.621-3.554,13.552c0,9.338,4.636,17.581,11.683,22.412    c-4.297-0.131-8.355-1.356-11.901-3.359v0.331c0,13.051,9.053,23.937,21.074,26.403c-2.201,0.632-4.523,0.948-6.92,0.948    c-1.69,0-3.343-0.162-4.944-0.478c3.343,10.694,13.035,18.483,24.53,18.691c-8.986,7.227-20.315,11.533-32.614,11.533    c-2.119,0-4.215-0.123-6.266-0.37c11.623,7.627,25.432,12.088,40.255,12.088c48.309,0,74.717-41.026,74.717-76.612    c0-1.171-0.023-2.342-0.068-3.49C120.036,33.433,124.491,28.695,128,23.294" fill="#00AAEC" fill-rule="evenodd" id="Twitter_1_"/></g></g></svg>
-                </a>
-            </li>
-            {% endif %} 
-            
-            {% if site.slack %}
-            <li class="main-nav__social-links__item">
-                <a href="{{site.slack}}">
-                    <svg class="icon" enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="_x32__stroke">
-                            <g id="Slack_1_">
-                                <rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128" />
-                                <path clip-rule="evenodd" d="M52.692,58.633l5.512,16.46l17.104-5.728    l-5.512-16.46L52.692,58.633z M100.398,74.958l-8.292,2.776l2.872,8.584c1.164,3.472-0.708,7.232-4.184,8.396    c-0.756,0.256-1.524,0.364-2.276,0.344c-2.712-0.072-5.212-1.808-6.12-4.528l-2.876-8.58l-17.1,5.728l2.872,8.58    c1.164,3.476-0.708,7.236-4.184,8.4c-0.756,0.252-1.524,0.36-2.276,0.34c-2.712-0.068-5.212-1.808-6.12-4.524l-2.876-8.584    l-8.292,2.78c-0.756,0.252-1.528,0.36-2.28,0.34c-2.708-0.068-5.208-1.808-6.12-4.528c-1.164-3.472,0.708-7.232,4.184-8.396    l8.296-2.78l-5.516-16.46l-8.292,2.78c-0.756,0.252-1.524,0.36-2.28,0.34c-2.708-0.068-5.208-1.808-6.12-4.528    c-1.164-3.472,0.712-7.232,4.184-8.396l8.296-2.78l-2.876-8.58c-1.164-3.476,0.708-7.236,4.184-8.396    c3.476-1.164,7.236,0.708,8.4,4.184l2.872,8.58l17.104-5.728l-2.876-8.58c-1.164-3.476,0.712-7.236,4.184-8.4    c3.476-1.164,7.236,0.712,8.4,4.184l2.872,8.584l8.296-2.78c3.476-1.164,7.232,0.712,8.396,4.184    c1.164,3.476-0.708,7.236-4.184,8.4l-8.292,2.776l5.512,16.464l8.296-2.78c3.472-1.16,7.232,0.712,8.396,4.184    C105.746,70.034,103.874,73.794,100.398,74.958z M122.642,46.406C109.45,2.422,90.39-7.838,46.406,5.358    C2.426,18.55-7.838,37.61,5.358,81.594c13.196,43.98,32.256,54.244,76.236,41.048C125.578,109.446,135.838,90.386,122.642,46.406"
-                                    fill="#77D4B6" fill-rule="evenodd" id="Slack" />
-                            </g>
-                        </g></svg>
-                </a>
-            </li>
-            {% endif %}
 
+        {% if site.socialProfiles %}
+        <ul class="main-nav__social-links">
+            {% for profile in site.socialProfiles %}
+                <li class="main-nav__social-links__item">
+                    <a href="{{profile.link}}" target="_blank">
+                        <img class="icon" src="{{site.url}}/assets/icons/{{profile.name}}.svg" alt="">
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
+        {% endif %}
+        
     </nav>
 </header>
