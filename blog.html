@@ -1,19 +1,20 @@
 ---
-layout: page
+layout: default
 title: Blog
 order: 3
 ---
-
-<div class="content" style="grid-column: 1/2; background: gray">
-    <div class="post-modal">
-        <h2 class="post-modal__heading">Post Title</h2>
-        <p class="post-modal__meta">Posted by <span class="post-modal__meta__author">Ahmed khaled</span> on November 1, 2018</p>
-        <p class="post-modal__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias esse commodi quos pariatur atque quo iusto repellendus, asperiores corporis cumque saepe itaque nisi nobis aliquam excepturi nemo ratione perspiciatis.</p>
-        <a class="post-modal__link" href="#">Read More</a>
-    </div>
+<div class="content">
+    {% for post in site.posts %}
+        <div class="post-modal" style=" background: gray">
+            <h2 class="post-modal__heading">
+                    <a href="{{post.url}}">{{post.title}}</a>
+            </h2>
+            <p class="post-modal__meta">
+                Posted by <span class="post-modal__meta__author">{{post.author}}</span>
+                on <span class="post-modal__meta__date">{{ post.date | date: "%-d %B %Y" }}</span>
+            </p>
+            <p class="post-modal__content">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+            <a class="post-modal__link" href="{{ post.url}}" >Read More</a>
+        </div>
+    {% endfor %}
 </div>
-
-
-<aside style="grid-column: 3/4; background: yellow">
-    test
-</aside>

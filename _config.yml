@@ -50,14 +50,14 @@ markdown: kramdown
 # theme: docyll-theme
 # remote_theme: pykhaled/docyll-theme
 permalink: pretty
-paginate: 5
-paginate_path: "/blog/page:num/"
+paginate: 3
+paginate_path: "/page:num/"
 sass:
   sass_dir: assets/css
   style: compressed
-# plugins:
+plugins:
 #   - jekyll-feed
-#   - "jekyll-paginate"
+  - jekyll-paginate
 #   - "jekyll-github-metadata"
 
 # Exclude from processing.

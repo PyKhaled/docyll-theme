@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "The Adventure of the Veiled Lodger"
 author: "Arthur Conan Doyle"
 categories: literature

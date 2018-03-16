@@ -16,12 +16,11 @@
         {% include header.html %}
 
         <!-- Main Content -->
-        {{ content }}
-
+        <main>{{ content }}</main>
         <!-- Footer -->
         {% include footer.html %}
         
         <!-- Javascripts -->
-        <script src="assets/js/main.js"></script>
+        <script src="{{ 'assets/js/main.js' | absolute_url }}"></script>
     </body>
 </html>

@@ -1,26 +1,28 @@
 ---
 ---
 
+// Global Settings
 @import "settings/global";
 @import "settings/colors";
 
-@import "theme";
-
+// Tools
 @import "tools/mixins";
 
+// General Styles
 @import "generic/box-sizing";
 @import "generic/normalize";
 
+// HTML Elements Styles
 // @import "elements/headings";
 @import "elements/links";
 @import "elements/lists";
 @import "elements/page";
 
-// @import "objects.wrappers";
-@import "objects/grid";
-@import "objects/container";
+// Wide Application Objects (OOCSS)
+@import "objects/wrappers";
 @import "objects/post-modal";
 
+// Wide Application Components
 @import "components/header";
 @import "components/footer";
 @import "components/docs-nav";
@@ -28,4 +30,5 @@
 // @import "components.buttons";
 // @import "components.carousel";
 
-// @import "trumps.utilities";
+// Magic Utilities
+@import "trumps/utilities";

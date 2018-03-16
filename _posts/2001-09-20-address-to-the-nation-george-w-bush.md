@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: post
 title: "Address to the Nation"
 categories: speeches
-speaker: "George W. Bush"
+author: "George W. Bush"
 ---
 
 # Address to the Nation
